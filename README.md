@@ -58,3 +58,6 @@ cd src
 python main.py
 The annotated video will be saved to output/annotated.mp4.
 Key settings (FPS, buffer length, thresholds) can be tuned in src/config.yaml.
+
+## DEMO
+![Demo of jump classifier](images/DEMO.png)
