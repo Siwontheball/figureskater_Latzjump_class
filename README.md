@@ -2,7 +2,9 @@
 
 This repository provides an end-to-end pipeline to classify jump types in real-time, overlaying these annotations on the output video. I used an LSTM model trained on 2D skeleton sequences. I used the source of the dataset is https://www.kaggle.com/datasets/betessawildenboer/lutz-jumps-dataset?resource=download but you can train the model with your own dataset. The validation score I got was around 70%, and I recommend that you use the trainset with the clear resolutions of ankles.
 
-Repository Structure
+## Repository Structure
+
+```text
 figure_skate_analysis/
 ├─ data/                  # (not tracked)
 │  └─ skeletons/          # training `.npy` skeletons from nightsky37
@@ -27,7 +29,7 @@ figure_skate_analysis/
 │  └─ annotated.mp4       # final annotated video (generated)
 │
 └─ requirements.txt       # Python dependencies
-
+```
 
 #Setup & Installation
 
