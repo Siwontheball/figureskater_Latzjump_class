@@ -1,6 +1,6 @@
 # Figure Skate Analysis
 
-# This repository provides an end-to-end pipeline to classify jump types in real-time, overlaying these annotations on the output video. I used an LSTM model trained on 2D skeleton sequences. I used the source of the dataset is https://www.kaggle.com/datasets/betessawildenboer/lutz-jumps-dataset?resource=download but you can train the model with your own dataset. The validation score I got was around 70%, and I recommend that you use the trainset with the clear resolutions of ankles.
+This repository provides an end-to-end pipeline to classify jump types in real-time, overlaying these annotations on the output video. I used an LSTM model trained on 2D skeleton sequences. I used the source of the dataset is https://www.kaggle.com/datasets/betessawildenboer/lutz-jumps-dataset?resource=download but you can train the model with your own dataset. The validation score I got was around 70%, and I recommend that you use the trainset with the clear resolutions of ankles.
 
 Repository Structure
 figure_skate_analysis/
@@ -57,7 +57,6 @@ Adjust hyperparameters in src/config.yaml as needed.
 cd src
 python main.py
 The annotated video will be saved to output/annotated.mp4.
-Key settings (FPS, buffer length, thresholds) can be tuned in src/config.yaml.
-
+Key settings (FPS, buffer length, thresholds) can be tuned in src/config.yaml. 
 ## DEMO
 ![Demo of jump classifier](images/DEMO.png)
